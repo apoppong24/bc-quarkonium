@@ -95,7 +95,8 @@ def main():
         md.append(f"| {f} | {d1:.1f} | {d2:.1f} | {d1-d2:.1f} | {1000*res[f]['13S1'][0]:.0f} ± {1000*res[f]['13S1'][1]:.0f} |")
     md.append(f"| **CMS** | | | **{CMS_DIFF} ± {CMS_ERR}** | |")
     md.append(f"| **LHCb** | | | **{LHCB_DIFF:.1f}** | |")
-    md.append(f"| **Lattice (HPQCD)** | ~55 | | | **{LATTICE_BCSTAR:.0f} ± {LATTICE_ERR:.0f}** |")
+    md.append(f"| **ATLAS 2026** | **64.5 ± 1.7** | **35.4 ± 2.4** (with CMS) | | **6339.0 ± 1.7** |")
+    md.append(f"| **Lattice (HPQCD 2010)** | ~55 | | | **{LATTICE_BCSTAR:.0f} ± {LATTICE_ERR:.0f}** |")
     md.append("")
 
     # ---- 3. exponent scan ----------------------------------------------------

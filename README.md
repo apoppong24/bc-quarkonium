@@ -144,8 +144,9 @@ B_c(2S) = 6884 ± 6 MeV (PDG 6871.2), where ± is the model spread.
   families vs CMS 29.1 ± 1.7 / LHCb 30.9 MeV. With a *fixed* α_s the absolute
   B_c* hyperfine (76–82 MeV) overshoots lattice (~55 MeV); with a one-loop
   *running* α_s(μ) (Λ fitted to cc̄+bb̄, `*_run_*` families; μ = 2μ_red or
-  √(m_c m_b)) the Martin family gives B_c* = 6331–6332 MeV (lattice 6330 ± 9)
-  and Δ(1S)−Δ(2S) = 28–30 MeV, and the fit χ² improves (85→70, 74→59).
+  √(m_c m_b)) the Martin family gives Δ(1S) = 63–67 MeV vs **ATLAS 2026:
+  64.5 ± 1.7 MeV** (arXiv:2605.16228), Δ(2S) = 35–38 vs 35.4 ± 2.4 (ATLAS+CMS),
+  and the fit χ² improves (85→70, 74→59).
 * Confining-power scan: χ² prefers α ≲ 0.1 (near-log); the hyperfine
   difference falls from 37 MeV (α=0.05) to 0 (α=1) and independently prefers
   α ≈ 0.1–0.2.

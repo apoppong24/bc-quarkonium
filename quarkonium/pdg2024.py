@@ -49,4 +49,9 @@ BOTTOMONIUM_ABOVE_THRESHOLD = {"43S1": (10579.4, 1.2)}   # Υ(4S)
 BC = {
     "11S0": (6274.47, 0.32),    # B_c+
     "21S0": (6871.2, 1.0),      # B_c(2S)+
+    "13S1": (6339.0, 1.7),      # B_c*+  ATLAS 2026, arXiv:2605.16228 (stat+syst in quadrature)
 }
+# Hyperfine observables (MeV)
+ATLAS_HYP_1S = (64.5, 1.7)      # m(B_c*+) - m(B_c+), ATLAS 2026
+CMS_HYP_DIFF = (29.1, 1.7)      # Delta_1S - Delta_2S, CMS 2019
+LHCB_HYP_DIFF = 30.9            # Delta_1S - Delta_2S, LHCb 2019 (peak difference)
