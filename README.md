@@ -1,8 +1,11 @@
 # quarkonium — Numerov solver for heavy-quark mesons and the B_c spectrum
 
-Refactored code for the MSc project **"B_c Meson Masses"**: the eight
-original Jupyter notebooks are replaced by one small, tested Python package
-plus a script that regenerates every table in the thesis.
+Refactored code for the MSc project **"B_c Meson Masses"** (Peter Agyemang
+Oppong, University of Glasgow): the eight original Jupyter notebooks are
+replaced by one small, tested Python package plus a script that regenerates
+every table in the thesis. The thesis itself and the untouched original
+notebooks are archived at
+https://github.com/apoppong24/bc-meson-msc-thesis.
 
 ## What changed
 
