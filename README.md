@@ -5,7 +5,9 @@ Oppong, University of Glasgow): the eight original Jupyter notebooks are
 replaced by one small, tested Python package plus a script that regenerates
 every table in the thesis. The thesis itself and the untouched original
 notebooks are archived at
-https://github.com/apoppong24/bc-meson-msc-thesis.
+https://github.com/apoppong24/bc-meson-msc-thesis, and the publication
+version of the code (uncertainty budget, experimental predictions, paper)
+is at https://github.com/apoppong24/bc-spectrum-paper.
 
 ## What changed
 
