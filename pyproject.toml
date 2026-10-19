@@ -3,7 +3,7 @@ name = "quarkonium"
 version = "1.0.0"
 description = "Numerov solver for heavy quark-antiquark bound states (B_c meson masses MSc project)"
 requires-python = ">=3.9"
-dependencies = ["numpy>=1.20"]
+dependencies = ["numpy>=1.20", "scipy>=1.8"]
 
 [project.optional-dependencies]
 dev = ["pytest", "matplotlib"]
