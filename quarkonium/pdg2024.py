@@ -1,9 +1,15 @@
 """Experimental charmonium and bottomonium masses used for the refit.
 
-Values in MeV from the PDG 2024 meson summary tables
-(https://pdg.lbl.gov/2024/tables/rpp2024-tab-mesons-c-cbar.pdf and
- .../rpp2024-tab-mesons-b-bbar.pdf, Navas et al., PRD 110, 030001).
-Where two uncertainties are listed they are combined in quadrature.
+Values in MeV from the PDG 2026 edition (F. Takahashi et al., Particle Data
+Group, Int. J. Mod. Phys. A 41, 2630011 (2026); meson summary tables
+https://pdg.lbl.gov/2026/tables/rpp2026-tab-mesons-c-cbar.pdf and
+.../rpp2026-tab-mesons-b-bbar.pdf, and the particle listings for the
+D-wave charmonia).  Where two uncertainties are listed they are combined in
+quadrature.  Differences from PDG 2024 (used in earlier commits) are noted
+inline; all are < 1 MeV and the bottomonium table is identical.
+
+The module keeps its historical name `pdg2024` so that existing imports and
+fit files work; `pdg` is an alias.
 
 Labels use *our* convention: n = radial excitation index starting at 1,
 so χ_c(1P) is "13P0" etc.  Only states below the open-flavour threshold
@@ -13,17 +19,17 @@ so χ_c(1P) is "13P0" etc.  Only states below the open-flavour threshold
 """
 
 CHARMONIUM = {
-    "11S0": (2984.1, 0.4),      # η_c(1S)
+    "11S0": (2984.09, 0.30),    # η_c(1S)   (2024: 2984.1 ± 0.4)
     "13S1": (3096.900, 0.006),  # J/ψ
-    "13P0": (3414.71, 0.30),    # χ_c0(1P)
+    "13P0": (3415.50, 0.19),    # χ_c0(1P)  (2024: 3414.71 ± 0.30)
     "13P1": (3510.67, 0.05),    # χ_c1(1P)
     "11P1": (3525.37, 0.14),    # h_c(1P)
     "13P2": (3556.17, 0.07),    # χ_c2(1P)
-    "21S0": (3637.7, 0.9),      # η_c(2S)
+    "21S0": (3637.8, 0.6),      # η_c(2S)   (2024: 3637.7 ± 0.9)
     "23S1": (3686.097, 0.011),  # ψ(2S)
     "13D1": (3773.7, 0.7),      # ψ(3770)
-    "13D2": (3823.5, 0.5),      # ψ2(3823)
-    "13D3": (3842.7, 0.2),      # ψ3(3842)
+    "13D2": (3823.51, 0.34),    # ψ2(3823)  (2024: 3823.5 ± 0.5)
+    "13D3": (3842.71, 0.20),    # ψ3(3842)  single LHCb measurement
 }
 
 BOTTOMONIUM = {

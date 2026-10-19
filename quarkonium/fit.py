@@ -1,4 +1,4 @@
-"""Refit potential parameters, quark masses and α_s to the PDG 2024
+"""Refit potential parameters, quark masses and α_s to the PDG 2026
 charmonium + bottomonium spectrum (J-resolved, including fine structure).
 
 Model:  M(n ²ˢ⁺¹L_J) = m1 + m2 + E_nl + Δ_SD(α_s)

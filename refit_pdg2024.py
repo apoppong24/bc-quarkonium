@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Refit one potential family to PDG 2024 and save results/fit_<family>.json.
+"""Refit one potential family to PDG 2026 and save results/fit_<family>.json.
 
     python refit_pdg2024.py martin      # also: log, cornell
     python refit_pdg2024.py --report    # combine the three fits, predict B_c
@@ -35,7 +35,7 @@ def report():
 
     fits = {f: json.loads((OUT / f"fit_{f}.json").read_text()) for f in ("martin", "log", "cornell")}
     old = {"martin": MARTIN, "log": LOGARITHMIC, "cornell": CORNELL}
-    md = ["# Refit of potential models to PDG 2024\n",
+    md = ["# Refit of potential models to PDG 2026\n",
           "Joint least-squares fit of each potential family (parameters, m_c, m_b, α_s) to "
           f"{len(fits['martin']['residuals'])} measured charmonium and bottomonium levels "
           "(J-resolved, below open-flavour threshold), σ² = σ_exp² + (10 MeV)².\n"]
@@ -59,7 +59,7 @@ def report():
               "not. The combination m_c + m_b that enters B_c is well constrained by the cc̄ and bb̄ fits.\n")
 
     md.append("## Fit residuals (MeV)\n")
-    md.append("| State | PDG 2024 | Martin | Log | Cornell |")
+    md.append("| State | PDG 2026 | Martin | Log | Cornell |")
     md.append("|---|---|---|---|---|")
     labels = [(r["pair"], r["label"], r["exp"]) for r in fits["martin"]["residuals"]]
     res = {f: {(r["pair"], r["label"]): r["model"] for r in d["residuals"]} for f, d in fits.items()}
@@ -77,7 +77,7 @@ def report():
         preds[f] = predict(P, "cb", bc_labels, h=1e-3)
     md.append("## B_c spectrum with refitted potentials (MeV)\n")
     md.append("Spread = half the range across the three families (model dependence).\n")
-    md.append("| State | Martin | Log | Cornell | Mean ± spread | PDG 2024 |")
+    md.append("| State | Martin | Log | Cornell | Mean ± spread | PDG 2026 |")
     md.append("|---|---|---|---|---|---|")
     bc_out = {}
     for lab in bc_labels:
