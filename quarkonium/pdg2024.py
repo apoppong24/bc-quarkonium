@@ -1,0 +1,52 @@
+"""Experimental charmonium and bottomonium masses used for the refit.
+
+Values in MeV from the PDG 2024 meson summary tables
+(https://pdg.lbl.gov/2024/tables/rpp2024-tab-mesons-c-cbar.pdf and
+ .../rpp2024-tab-mesons-b-bbar.pdf, Navas et al., PRD 110, 030001).
+Where two uncertainties are listed they are combined in quadrature.
+
+Labels use *our* convention: n = radial excitation index starting at 1,
+so χ_c(1P) is "13P0" etc.  Only states below the open-flavour threshold
+(DD̄ at 3739 MeV, BB̄ at 10559 MeV) are included in the fit, except
+ψ(3770) and ψ3(3842)/ψ2(3823), which are narrow and conventionally fitted.
+Υ(4S) is listed but excluded from the fit by default.
+"""
+
+CHARMONIUM = {
+    "11S0": (2984.1, 0.4),      # η_c(1S)
+    "13S1": (3096.900, 0.006),  # J/ψ
+    "13P0": (3414.71, 0.30),    # χ_c0(1P)
+    "13P1": (3510.67, 0.05),    # χ_c1(1P)
+    "11P1": (3525.37, 0.14),    # h_c(1P)
+    "13P2": (3556.17, 0.07),    # χ_c2(1P)
+    "21S0": (3637.7, 0.9),      # η_c(2S)
+    "23S1": (3686.097, 0.011),  # ψ(2S)
+    "13D1": (3773.7, 0.7),      # ψ(3770)
+    "13D2": (3823.5, 0.5),      # ψ2(3823)
+    "13D3": (3842.7, 0.2),      # ψ3(3842)
+}
+
+BOTTOMONIUM = {
+    "11S0": (9398.7, 2.0),      # η_b(1S)
+    "13S1": (9460.40, 0.10),    # Υ(1S)
+    "13P0": (9859.44, 0.52),    # χ_b0(1P)
+    "13P1": (9892.78, 0.40),    # χ_b1(1P)
+    "11P1": (9899.3, 0.8),      # h_b(1P)
+    "13P2": (9912.21, 0.40),    # χ_b2(1P)
+    "21S0": (9999.0, 3.5),      # η_b(2S)  (Belle; PDG lists as "needs confirmation")
+    "23S1": (10023.4, 0.5),     # Υ(2S)
+    "13D2": (10163.7, 1.4),     # Υ2(1D)
+    "23P0": (10232.5, 0.64),    # χ_b0(2P)
+    "23P1": (10255.46, 0.55),   # χ_b1(2P)
+    "21P1": (10259.8, 1.2),     # h_b(2P)
+    "23P2": (10268.65, 0.55),   # χ_b2(2P)
+    "33S1": (10355.1, 0.5),     # Υ(3S)
+    "33P1": (10513.4, 0.7),     # χ_b1(3P)
+    "33P2": (10524.0, 0.8),     # χ_b2(3P)
+}
+BOTTOMONIUM_ABOVE_THRESHOLD = {"43S1": (10579.4, 1.2)}   # Υ(4S)
+
+BC = {
+    "11S0": (6274.47, 0.32),    # B_c+
+    "21S0": (6871.2, 1.0),      # B_c(2S)+
+}
