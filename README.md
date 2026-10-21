@@ -1,5 +1,7 @@
 # quarkonium — Numerov solver for heavy-quark mesons and the B_c spectrum
 
+[![ORCID](https://img.shields.io/badge/ORCID-0009--0009--4678--0034-A6CE39?logo=orcid&logoColor=white)](https://orcid.org/0009-0009-4678-0034)
+
 Refactored code for the MSc project **"B_c Meson Masses"** (Peter Agyemang
 Oppong, University of Glasgow, 2022; supervisor Prof. Christine Davies): the
 eight original Jupyter notebooks are replaced by one small, tested Python
