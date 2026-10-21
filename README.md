@@ -1,13 +1,18 @@
 # quarkonium — Numerov solver for heavy-quark mesons and the B_c spectrum
 
 Refactored code for the MSc project **"B_c Meson Masses"** (Peter Agyemang
-Oppong, University of Glasgow): the eight original Jupyter notebooks are
-replaced by one small, tested Python package plus a script that regenerates
-every table in the thesis. The thesis itself and the untouched original
-notebooks are archived at
-https://github.com/apoppong24/bc-meson-msc-thesis, and the publication
-version of the code (uncertainty budget, experimental predictions, paper)
-is at https://github.com/apoppong24/bc-spectrum-paper.
+Oppong, University of Glasgow, 2022; supervisor Prof. Christine Davies): the
+eight original Jupyter notebooks are replaced by one small, tested Python
+package plus a script that regenerates every table in the thesis.
+
+Related records:
+
+- Thesis, as submitted (2022): https://doi.org/10.5281/zenodo.23533575 —
+  revised edition (2026): https://doi.org/10.5281/zenodo.23534192
+- Thesis PDF and untouched original notebooks: https://github.com/apoppong24/bc-meson-msc-thesis
+- Publication version (PDG 2026 refits, fine structure, uncertainty budget): https://github.com/apoppong24/bc-spectrum-paper
+- Model-independent extraction of V(r) from the spectrum: https://github.com/apoppong24/bc-potential-inverse
+- Hyperfine splittings and the contact interaction: https://github.com/apoppong24/bc-hyperfine
 
 ## What changed
 
